@@ -1,0 +1,74 @@
+/*MENÚ*/
+
+.menu-contenedor{
+    display:flex;
+    justify-content:center;
+    padding:50px 20px;
+}
+
+.menu{
+
+    width:950px;
+    background: var(--blanco);
+    padding:40px;
+    border-radius:15px;
+    box-shadow:0 5px 15px rgba(0,0,0,.10);
+}
+
+.menu h2{
+
+    text-align:center;
+    color:var(--rojo);
+    font-size:2rem;
+    margin-bottom:40px;
+}
+
+.plato{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:30px;
+
+    padding:25px 0;
+
+    margin-bottom:25px;
+
+    border-bottom:1px solid #e5e5e5;
+}
+
+.plato:last-child{
+
+    border-bottom:none;
+
+    margin-bottom:0;
+}
+
+.plato img{
+    width:260px;
+    height:170px;
+    object-fit:cover;
+    border-radius:12px;
+}
+
+.info-plato{
+    flex:1;
+}
+
+.info-plato h3{
+    color:var(--rojo);
+    margin-bottom:15px;
+    font-size:1.8rem;
+}
+
+.info-plato p{
+    line-height:1.8;
+    margin-bottom:20px;
+}
+
+.info-plato span{
+    color:var(--rojo);
+    font-size:1.4rem;
+    font-weight:bold;
+}
