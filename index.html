@@ -1,9 +1,27 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sazón Inka</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+    <!-- AOS -->
+    <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
+    <!-- CSS -->
     <link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -13,36 +31,60 @@
         <h1>Sazón Inka</h1>
     </header>
 
-    <nav class="navbar">
+    <nav class="menu-nav">
         <ul>
-        <li><a href="index.html">Inicio</a></li>
-        <li><a href="nosotros.html">Nosotros</a></li>
-        <li><a href="menu.html">Menú</a></li>
-        <li><a href="#">Servicios</a></li>
-        <li><a href="#">Contacto</a></li>
+            <li>
+                <a href="index.html">
+                    <i class="fa-solid fa-house"></i> Inicio
+                </a>
+            </li>
+
+            <li>
+                <a href="nosotros.html">
+                    <i class="fa-solid fa-users"></i> Nosotros
+                </a>
+            </li>
+
+            <li>
+                <a href="menu.html">
+                    <i class="fa-solid fa-utensils"></i> Menú
+                </a>
+            </li>
+
+            <li>
+                <a href="servicios.html">
+                    <i class="fa-solid fa-bell-concierge"></i> Servicios
+                </a>
+            </li>
+
+            <li>
+                <a href="contacto.html">
+                    <i class="fa-solid fa-phone"></i> Contacto
+                </a>
+            </li>
         </ul>
     </nav>
 
-    <section class="galeria">
+    <section class="galeria" data-aos="fade-up">
 
         <button class="flecha">&#10094;</button>
 
         <div class="imagenes">
-            <img src="img\ceviche.jpg"
-                 alt="Ceviche">
 
-            <img src="img\Aji-gallina.jpg"
-                 alt="Aji de gallina">
+            <img src="img/ceviche.jpg" alt="Ceviche">
 
-            <img src="img\pollo-a-la-brasa-peruano_800x534.jpg"
-                 alt="Pollo a la brasa">
+            <img src="img/Aji-gallina.jpg" alt="Ají de Gallina">
+
+            <img src="img/pollo-a-la-brasa-peruano_800x534.jpg"
+                alt="Pollo a la Brasa">
+
         </div>
 
         <button class="flecha">&#10095;</button>
 
     </section>
 
-    <main class="inicio">
+    <main class="inicio" data-aos="fade-up">
 
         <h2>Bienvenidos a Sazón Inka</h2>
 
@@ -61,5 +103,19 @@
         </p>
     </footer>
 
+    <!-- Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- AOS -->
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+
+    <script>
+        AOS.init({
+            duration: 800,
+            once: true
+        });
+    </script>
+
 </body>
+
 </html>
