@@ -1,5 +1,4 @@
 /*MENÚ*/
-
 .menu-contenedor{
     display:flex;
     justify-content:center;
@@ -23,6 +22,7 @@
     margin-bottom:40px;
 }
 
+
 .plato{
 
     display:flex;
@@ -36,6 +36,14 @@
     margin-bottom:25px;
 
     border-bottom:1px solid #e5e5e5;
+
+    transition: .3s;
+}
+
+.plato:hover{
+
+    transform:translateY(-3px);
+
 }
 
 .plato:last-child{
@@ -71,4 +79,102 @@
     color:var(--rojo);
     font-size:1.4rem;
     font-weight:bold;
+}
+
+/*PEDIDO*/
+
+.pedido{
+    width: 100%;
+    max-width: 650px;
+    margin: 35px auto;
+    padding: 30px;
+    background: #f8f8f8;
+    border-radius: 12px;
+    box-shadow: 0 3px 10px rgba(0,0,0,.08);
+
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    transition:.3s;
+}
+
+.pedido:hover{
+
+    transform:translateY(-3px);
+
+}
+
+.pedido label{
+    font-weight: bold;
+    color: var(--rojo);
+}
+
+.pedido select,
+.pedido input{
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+}
+
+.pedido button{
+    padding: 12px;
+    background: var(--rojo);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: .3s;
+}
+
+.pedido button:hover{
+    background:#8e1515;
+}
+
+#listaPedidos{
+    width:100%;
+    max-width:650px;
+    margin:20px auto;
+    padding:20px 30px;
+
+    background:#f8f8f8;
+
+    border-radius:12px;
+
+    list-style:disc;
+
+    min-height:120px;
+
+    box-shadow:0 3px 10px rgba(0,0,0,.08);
+}
+
+#total{
+    margin-top:25px;
+    color:var(--rojo);
+    text-align:center;
+    font-size:1.6rem;
+}
+
+#vaciarPedido{
+    display:block;
+    margin:25px auto 0;
+    padding:12px 25px;
+    background:var(--rojo);
+    color:white;
+    border:none;
+    border-radius:8px;
+    cursor:pointer;
+    font-size:16px;
+    transition:.3s;
+}
+
+#vaciarPedido:hover{
+    background:#8e1515;
+}
+
+hr{
+    margin:40px 0;
+    border:none;
+    border-top:1px solid #ddd;
 }

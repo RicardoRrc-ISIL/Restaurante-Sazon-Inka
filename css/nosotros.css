@@ -1,5 +1,4 @@
 /*NOSOTROS*/
-
 .nosotros-contenedor{
 
     display:flex;
@@ -11,7 +10,10 @@
 
 .nosotros{
 
-    width:950px;
+    width:100%;
+    max-width:950px;
+
+    margin:50px auto;
 
     background:var(--blanco);
 

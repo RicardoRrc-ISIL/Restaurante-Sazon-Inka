@@ -1,0 +1,149 @@
+/* CONTACTO */
+
+.contacto{
+
+    width:950px;
+
+    max-width:95%;
+
+    margin:50px auto;
+
+    background:var(--blanco);
+
+    padding:40px;
+
+    border-radius:15px;
+
+    box-shadow:0 5px 15px rgba(0,0,0,.10);
+}
+
+.contacto h2{
+
+    text-align:center;
+
+    color:var(--rojo);
+
+    font-size:2rem;
+
+    margin-bottom:20px;
+}
+
+.intro{
+
+    text-align:center;
+
+    line-height:1.8;
+
+    margin-bottom:40px;
+}
+
+.info-contacto{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    gap:20px;
+
+    flex-wrap:wrap;
+
+    margin-bottom:40px;
+}
+
+.dato{
+
+    flex:1;
+
+    min-width:220px;
+
+    background:#f8f8f8;
+
+    padding:25px;
+
+    border-radius:12px;
+
+    text-align:center;
+
+    box-shadow:0 3px 8px rgba(0,0,0,.08);
+
+    transition:.3s;
+}
+
+.dato:hover{
+
+    transform:translateY(-5px);
+
+    box-shadow:0 8px 18px rgba(0,0,0,.12);
+}
+
+.dato i{
+
+    font-size:42px;
+
+    color:var(--rojo);
+
+    margin-bottom:15px;
+}
+
+.dato h3{
+
+    color:var(--rojo);
+
+    margin-bottom:10px;
+}
+
+.formulario{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:20px;
+}
+
+.formulario input,
+.formulario textarea{
+
+    padding:14px;
+
+    border:1px solid #ccc;
+
+    border-radius:8px;
+
+    font-family:"Poppins",sans-serif;
+
+    font-size:16px;
+}
+
+.formulario textarea{
+
+    resize:none;
+}
+
+.formulario button{
+
+    width:220px;
+
+    align-self:center;
+
+    padding:14px;
+
+    border:none;
+
+    border-radius:8px;
+
+    background:var(--rojo);
+
+    color:white;
+
+    font-size:16px;
+
+    cursor:pointer;
+
+    transition:.3s;
+}
+
+.formulario button:hover{
+
+    background:#8e1515;
+}
